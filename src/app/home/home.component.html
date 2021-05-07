@@ -9,11 +9,11 @@
     </thead>
     <tbody>
       <tr *ngFor="let v of veiculos">
-        <th scope="row" >{{v.id}}</th>
+        <th>{{v.id}}</th>
         <td>{{v.placa}}</td>
         <td>{{v.modelo}}</td>
         <td>{{v.codInfracao}}</td>
-        <td>excluir</td>
+        <td><button type="button" class="btn btn-danger" (click)="excluirVeiculo(v.id)">Excluir</button></td>
       </tr>
 
     </tbody>

@@ -1,19 +1,22 @@
 {
-    "veiculos": [
-        {
-            "placa": "nmr4292",
-            "modelo": "Creta",
-            "codInfracao": "12345"
-        },
-        {
-            "placa": "wed0987",
-            "modelo": "Honda Civic",
-            "codInfracao": "0987"
-        },
-        {
-            "placa": "kjh5678",
-            "modelo": "Toyota Corola",
-            "codInfracao": "45678"
-        }
-    ]
+  "veiculos": [
+    {
+      "id": 1,
+      "placa": "nmr4292",
+      "modelo": "Creta",
+      "codInfracao": "12345"
+    },
+    {
+      "id": 2,
+      "placa": "wed0987",
+      "modelo": "Honda Civic",
+      "codInfracao": "0987"
+    },
+    {
+      "id": 3,
+      "placa": "kjh5678",
+      "modelo": "Toyota Corola",
+      "codInfracao": "45678"
+    }
+  ]
 }

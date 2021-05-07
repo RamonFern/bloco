@@ -23,6 +23,16 @@ export class HomeComponent implements OnInit {
     }, 100)
     })
   }
+
+  excluirVeiculo = (id: any) => {
+    this.veiculoService.excluirVeiculo(id).subscribe(
+      success => console.log("Deletado com sucessso!"),
+      error => console.log("Não foi possivel Excluir este veiculo!..."),
+      () => console.log("Requisição completa")
+    )
+    this.ngOnInit();
+  }
+  
   }
 
 
