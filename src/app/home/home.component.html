@@ -1,4 +1,20 @@
-<p>primeira página home...</p>
-<div *ngFor="let v of carro">
-    {{v.modelo}}
-</div> 
+<table class="table table-striped">
+    <thead>
+      <tr>
+        <th scope="col">id</th>
+        <th scope="col">Placa</th>
+        <th scope="col">Modelo</th>
+        <th scope="col">Cod Infração</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let v of veiculos">
+        <th scope="row" >{{v.id}}</th>
+        <td>{{v.placa}}</td>
+        <td>{{v.modelo}}</td>
+        <td>{{v.codInfracao}}</td>
+        <td>excluir</td>
+      </tr>
+
+    </tbody>
+</table>

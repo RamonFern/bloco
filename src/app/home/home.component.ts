@@ -1,3 +1,4 @@
+import { Veiculo } from './../models/veiculo';
 import { VeiculoService } from './../service/veiculo.service';
 import { Component, OnInit } from '@angular/core';
 
@@ -9,13 +10,15 @@ import { Component, OnInit } from '@angular/core';
 export class HomeComponent implements OnInit {
 
   carro: any
+  veiculos: Array<Veiculo> = []
   constructor(private veiculoService: VeiculoService) { }
 
   ngOnInit(): void {   
 
-    this.veiculoService.listar().subscribe(veiculos => {
-      console.log(veiculos)
-      this.carro = veiculos
+    this.veiculoService.listar().subscribe(veic => {
+      this.veiculos = veic
+      this.carro = veic
+      console.log(this.veiculos)
     })
   }
   }
