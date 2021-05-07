@@ -13,9 +13,11 @@ export class HomeComponent implements OnInit {
 
   ngOnInit(): void {   
 
-    this.carro = this.veiculoService.listar()
+    this.veiculoService.listar().subscribe(veiculos => {
+      console.log(veiculos)
+      this.carro = veiculos
+    })
   }
-
   }
 
 
