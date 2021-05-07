@@ -17,6 +17,12 @@
       "placa": "kjh5678",
       "modelo": "Toyota Corola",
       "codInfracao": "45678"
+    },
+    {
+      "id": 4,
+      "placa": "mjh9897",
+      "modelo": "vectra",
+      "codInfracao": "123123"
     }
   ]
 }

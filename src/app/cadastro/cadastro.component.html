@@ -1,3 +1,9 @@
-<p>cadastro works!</p>
-
-<h1>{{ carro.placa }}</h1>
+<div>
+    <label for="nome" class="form-label">Placa</label>
+    <input class="form-control" name="placa" [(ngModel)]="veic.placa">
+    <label for="preco" class="form-label">Modelo</label>
+    <input class="form-control" name="modelo" [(ngModel)]="veic.modelo">
+    <label for="preco" class="form-label">Cod Infração</label>
+    <input class="form-control" name="modelo" [(ngModel)]="veic.codInfracao">
+    <button type="button" class="btn btn-success" (click)="inserirVeiculo()">Salvar</button>
+</div>

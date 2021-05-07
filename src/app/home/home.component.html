@@ -10,8 +10,8 @@
     <tbody>
       <tr *ngFor="let v of veiculos">
         <th>{{v.id}}</th>
-        <td>{{v.placa}}</td>
-        <td>{{v.modelo}}</td>
+        <td>{{v.placa | uppercase}}</td>
+        <td>{{v.modelo | uppercase}}</td>
         <td>{{v.codInfracao}}</td>
         <td><button type="button" class="btn btn-danger" (click)="excluirVeiculo(v.id)">Excluir</button></td>
       </tr>
