@@ -8,12 +8,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CadastroComponent implements OnInit {
 
+  
   carro: Veiculo = new Veiculo('nmr4292', 'moto suzuky', '123123')
   constructor() { }
 
   ngOnInit(): void {
 
-    console.log(this.carro)
+    
+    
+
   }
 
 }
